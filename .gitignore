@@ -14,7 +14,7 @@
 .env
 # production
 /build
-
+ next.config.js
 # misc
 .DS_Store
 *.pem
