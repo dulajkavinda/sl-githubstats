@@ -2,7 +2,7 @@
 
 ### Description
 ---
-**sl-githubstats** ranks top 200 most active GitHub users in Sri Lanka sorted by total contributions, followers they have and by province.
+**sl-githubstats** ranks top 200 most active GitHub users in Sri Lanka sorted by total contributions, followers they have and by province. Backend of this application was written in Node and deployed on Heroku.
 
 <p align="center">
   <img width="80%" src="demo.gif" alt="animated" />
