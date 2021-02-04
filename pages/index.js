@@ -16,7 +16,7 @@ import { FixedSizeList } from "react-window";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import EmailIcon from "@material-ui/icons/Email";
 import InstagramIcon from "@material-ui/icons/Instagram";
-import { ENDPOINTS } from "../Consts";
+require("dotenv").config();
 
 import User from "../components/User/User";
 import styles from "../styles/Home.module.css";
@@ -188,7 +188,7 @@ export default function Home({ data, last_updated }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(ENDPOINTS.GET_CONTR);
+  const res = await fetch(process.env.GET_DATA);
   const data = await res.json();
   data[0].dataset.sort(function (a, b) {
     return (
