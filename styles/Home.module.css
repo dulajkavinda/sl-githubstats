@@ -232,6 +232,16 @@
   padding-top: 40px;
 }
 
+.author_name {
+  color: #838383;
+  cursor: pointer;
+}
+
+.author_name:hover {
+  color: #4e4d4d;
+  cursor: pointer;
+}
+
 @media (max-width: 800px) {
   .container {
     width: 100%;

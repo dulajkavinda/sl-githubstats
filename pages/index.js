@@ -82,23 +82,35 @@ export default function Home({ data, last_updated }) {
           <span className={styles.updated}>Last updated : {last_updated}</span>
         </div>
         <div className={styles.info_bottom}>
-          <span className={styles.by}>Developed by Dulaj Kavinda</span>
+          <span className={styles.by}>
+            Developed by{" "}
+            <span
+              onClick={() => window.open(`https://github.com/dulajkavinda`)}
+              className={styles.author_name}
+            >
+              Dulaj Kavinda
+            </span>
+          </span>
           <div className={styles.contact}>
-            <div>
+            <div onClick={() => window.open(`https://github.com/dulajkavinda`)}>
               <GitHubIcon />
             </div>
-            <div>
+            <div
+              onClick={() =>
+                window.open(`https://www.instagram.com/dulaj.kaavinda/`)
+              }
+            >
               <InstagramIcon />
             </div>
-            <div>
+            <div onClick={() => window.open(`mailto:dulajkaavinda@gmail.com`)}>
               <EmailIcon />
             </div>
           </div>
 
           <span className={styles.using}>
             Repo :
-            <a href="https://github.com/dulajkavinda/slgithub">
-              https://github.com/dulajkavinda/slgithub
+            <a href="https://github.com/dulajkavinda/sl-githubstats">
+              https://github.com/dulajkavinda/sl-githubstats
             </a>
           </span>
         </div>
