@@ -109,7 +109,7 @@ export default function Home({ data, last_updated }) {
           <span className={styles.using}>
             Repo :
             <a href="https://github.com/dulajkavinda/sl-githubstats">
-              https://github.com/dulajkavinda/sl-githubstats
+              sl-githubstats
             </a>
           </span>
         </div>
