@@ -1,0 +1,142 @@
+.user_info_tile > .col_rank {
+  color: #5972dc;
+}
+
+.col_rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  width: 10%;
+}
+
+.col_user {
+  width: 40%;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  display: flex;
+  justify-content: space-around;
+}
+
+.col_contr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5fb984;
+  width: 16.6%;
+}
+
+.list_view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col_fol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  width: 16.6%;
+}
+
+.col_git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  width: 16.6%;
+  cursor: pointer;
+}
+
+.col_git:hover {
+  opacity: 80%;
+}
+
+.user_info_tile {
+  margin-bottom: 10px;
+  width: 70%;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_name {
+  width: 60%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_name_bottom {
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+.user_info_tile_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .coulmn_names > div {
+    font-size: 90%;
+  }
+  .col_rank {
+    width: 10%;
+  }
+
+  .col_user {
+    width: 45%;
+  }
+
+  .col_contr {
+    width: 15%;
+  }
+
+  .col_fol {
+    width: 15%;
+  }
+
+  .col_git {
+    width: 15%;
+  }
+  .user_info_tile {
+    width: 95%;
+  }
+  .user_info_tile > div {
+    font-size: 90%;
+  }
+}

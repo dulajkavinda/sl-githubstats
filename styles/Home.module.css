@@ -1,0 +1,294 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 100vh;
+  width: 70%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.top_header {
+  width: 70%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f7fa;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.tabs {
+  margin-left: 20px;
+}
+
+.province_menu {
+  margin-right: 20px;
+}
+
+.coulmn_names {
+  width: 70%;
+  height: 80px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.coulmn_names > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+}
+
+.user_info_tile > .col_rank {
+  color: #5972dc;
+}
+
+.col_rank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  width: 10%;
+}
+
+.col_user {
+  width: 40%;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  display: flex;
+  justify-content: space-around;
+}
+
+.col_contr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #5fb984;
+  width: 16.6%;
+}
+
+.list_view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col_fol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  width: 16.6%;
+}
+
+.col_git {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #919191;
+  width: 16.6%;
+}
+
+.user_info_tile {
+  width: 70%;
+  height: 80px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_name {
+  width: 60%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.user_info_tile_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.info {
+  height: 100vh;
+  width: 30%;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.info_top > p {
+  color: #9d9d9d;
+  display: flex;
+  flex-direction: row;
+}
+
+.info_top > p > img {
+  margin-left: 3px;
+}
+
+.info_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sl_part {
+  color: #f1be38;
+}
+
+.logo {
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #2e2e2e;
+}
+
+.info_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+
+.contact > div {
+  margin: 5px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.by {
+  color: #afacac;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.using {
+  color: #afacac;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.using > a {
+  color: #5972dc;
+}
+
+.contact > div:hover {
+  margin: 5px;
+  opacity: 1;
+}
+
+.updated {
+  color: #2e2e2e;
+  font-size: 12px;
+  padding-top: 40px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .info {
+    height: 40vh;
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+    background-color: white;
+  }
+  .top_header {
+    width: 95%;
+  }
+  .coulmn_names {
+    width: 93%;
+  }
+  .coulmn_names > div {
+    font-size: 90%;
+  }
+  .col_rank {
+    width: 10%;
+  }
+
+  .col_user {
+    width: 45%;
+  }
+
+  .col_contr {
+    width: 15%;
+  }
+
+  .col_fol {
+    width: 15%;
+  }
+
+  .col_git {
+    width: 15%;
+  }
+  .user_info_tile {
+    width: 95%;
+  }
+  .user_info_tile > div {
+    font-size: 90%;
+  }
+  .tab {
+    font-size: 75%;
+  }
+  .tabs {
+    margin-left: 5px;
+  }
+  .logo {
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: #2e2e2e;
+  }
+}
