@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "next build && next export && touch out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.4",
@@ -17,6 +18,7 @@
     "@react-hook/media-query": "^1.1.1",
     "dotenv": "^8.2.0",
     "framer-motion": "^3.3.0",
+    "fs": "^0.0.1-security",
     "next": "10.0.6",
     "react": "17.0.1",
     "react-dom": "17.0.1",
