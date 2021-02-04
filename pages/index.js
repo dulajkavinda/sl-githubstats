@@ -76,7 +76,7 @@ export default function Home({ data, last_updated }) {
           </div>
           <p>
             top 200 most active Github users in Sri Lanka
-            <img width="20px" height="20px" src={`/sl.png`} />
+            <img className={styles.slimg} src={`/sl.png`} />
           </p>
           <span className={styles.updated}>Last updated : {last_updated}</span>
         </div>
@@ -187,7 +187,9 @@ export default function Home({ data, last_updated }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(process.env.GET_URL);
+  const res = await fetch(
+    "https://slgithub.herokuapp.com/contributions/sri_lanka/"
+  );
   const data = await res.json();
   data[0].dataset.sort(function (a, b) {
     return (
