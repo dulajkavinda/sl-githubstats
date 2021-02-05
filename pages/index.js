@@ -191,7 +191,9 @@ export default function Home({ data, last_updated }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(env.process.GET_URL);
+  const res = await fetch(
+    "https://slgithub.herokuapp.com/contributions/sri_lanka/"
+  );
   const data = await res.json();
   data[0].dataset.sort(function (a, b) {
     return (
