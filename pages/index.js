@@ -141,7 +141,7 @@ export default function Home({ data, last_updated }) {
               as={Button}
               rightIcon={<ChevronDownIcon />}
             >
-              Province
+              {selected === "Any" ? "Province" : selected}
             </MenuButton>
             <MenuList>
               <MenuOptionGroup
