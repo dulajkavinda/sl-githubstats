@@ -47,6 +47,8 @@ export default function Home({ data, last_updated }) {
       })
     : 0;
 
+  const date = new Date(last_updated);
+
   console.log(selected);
 
   selected !== "Any"
@@ -78,7 +80,9 @@ export default function Home({ data, last_updated }) {
             top 200 most active Github users in Sri Lanka
             <img className={styles.slimg} src={`/sl.png`} />
           </p>
-          <span className={styles.updated}>Last updated : {last_updated}</span>
+          <span className={styles.updated}>
+            Last updated : {date.toUTCString().replace(/\s*(GMT|UTC)$/, "")}
+          </span>
         </div>
         <div className={styles.info_bottom}>
           <span className={styles.by}>
@@ -187,9 +191,7 @@ export default function Home({ data, last_updated }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(
-    "https://slgithub.herokuapp.com/contributions/sri_lanka/"
-  );
+  const res = await fetch(env.process.GET_URL);
   const data = await res.json();
   data[0].dataset.sort(function (a, b) {
     return (
