@@ -307,4 +307,31 @@
     font-weight: 700;
     color: #2e2e2e;
   }
+
+  .info_top > p {
+    font-size: 85%;
+  }
+  .slimg {
+    width: 20px;
+    height: 20px;
+  }
+  .updated {
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  .by {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .contact {
+    padding-bottom: 0px;
+  }
+
+  .info_bottom {
+    padding-bottom: 10px;
+  }
+  .info {
+    padding-top: 10px;
+  }
 }
